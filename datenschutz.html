@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – PrepMate</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25em; }
+    h2 { font-size: 1.2rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+    p, li { font-size: 0.97rem; }
+    ul { padding-left: 1.4em; }
+    a { color: #1a73e8; }
+    .meta { color: #666; font-size: 0.88rem; margin-bottom: 2em; }
+  </style>
+</head>
+<body>
+
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">App: <strong>PrepMate</strong> &nbsp;|&nbsp; Stand: Mai 2026</p>
+
+  <!-- 1. Verantwortlicher -->
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br><br>
+    <strong>Ioannis Karakatsanis</strong><br>
+    E-Mail: <a href="mailto:iksoftware.dev@gmail.com">iksoftware.dev@gmail.com</a>
+  </p>
+
+  <!-- 2. Allgemein -->
+  <h2>2. Grundsatz der Datensparsamkeit</h2>
+  <p>
+    PrepMate ist eine App zur Mahlzeitenplanung und zum Körper-Tracking. Die App ist darauf
+    ausgelegt, so wenig personenbezogene Daten wie möglich zu erheben. Alle von dir eingegebenen
+    Daten werden <strong>ausschließlich lokal</strong> auf deinem Gerät gespeichert und nicht an
+    externe Server übertragen, sofern dies nicht im Folgenden ausdrücklich beschrieben ist.
+  </p>
+
+  <!-- 3. Lokal gespeicherte Daten -->
+  <h2>3. Lokal gespeicherte Daten</h2>
+  <p>
+    Folgende Daten werden <strong>nur auf deinem Gerät</strong> in einer lokalen Datenbank
+    (SQLite) gespeichert:
+  </p>
+  <ul>
+    <li>Rezepte (Name, Zutaten, Zubereitungsschritte, Fotos)</li>
+    <li>Wochenplan (geplante Mahlzeiten je Tag)</li>
+    <li>Einkaufsliste (Zutaten und Mengen)</li>
+    <li>Körpergewicht (Datum + Gewicht)</li>
+    <li>Körpermaße (z.&nbsp;B. Taillen-, Hüft- oder Brustumfang)</li>
+    <li>Body-Tracking-Fotos (Fortschrittsbilder)</li>
+    <li>App-Einstellungen (z.&nbsp;B. Sprache, Maßeinheiten)</li>
+  </ul>
+  <p>
+    Diese Daten verlassen dein Gerät nicht und werden weder an uns noch an Dritte übermittelt.
+    Eine Synchronisation mit der Cloud findet nicht statt.
+  </p>
+
+  <!-- 4. Kamera -->
+  <h2>4. Kamera-Zugriff</h2>
+  <p>
+    PrepMate benötigt Zugriff auf die Kamera deines Geräts für zwei Funktionen:
+  </p>
+  <ul>
+    <li>
+      <strong>Barcode-Scanner:</strong> Zum Scannen von Lebensmittel-Barcodes, um Nährwertdaten
+      abzurufen. Die Kamera wird nur aktiv, wenn du den Scanner manuell öffnest. Es werden keine
+      Kamerabilder gespeichert.
+    </li>
+    <li>
+      <strong>Body-Tracking-Fotos:</strong> Du kannst optional Fortschrittsbilder aufnehmen, die
+      ausschließlich lokal auf deinem Gerät gespeichert werden.
+    </li>
+  </ul>
+  <p>
+    Der Kamera-Zugriff erfolgt nur auf ausdrückliche Anforderung durch dich (keine Hintergrund-
+    oder Dauernutzung).
+  </p>
+
+  <!-- 5. Externe Dienste -->
+  <h2>5. Externe Dienste – OpenFoodFacts API</h2>
+  <p>
+    Wenn du in PrepMate einen Barcode scannst oder nach einem Lebensmittel suchst, wird eine
+    Anfrage an die <strong>OpenFoodFacts API</strong> (
+    <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">world.openfoodfacts.org</a>
+    ) gesendet. Dabei wird folgende Information übertragen:
+  </p>
+  <ul>
+    <li>Der gescannte Barcode oder der eingegebene Suchbegriff</li>
+    <li>Die technische IP-Adresse deines Geräts (durch den Aufbau der HTTPS-Verbindung)</li>
+  </ul>
+  <p>
+    OpenFoodFacts ist eine gemeinnützige, offene Datenbank für Lebensmittelprodukte. Die
+    Übertragung erfolgt verschlüsselt über HTTPS. Für die Datenverarbeitung durch OpenFoodFacts
+    gilt deren eigene Datenschutzerklärung:
+    <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">
+      https://world.openfoodfacts.org/privacy
+    </a>.
+  </p>
+  <p>
+    Die Nutzung dieser Funktion ist <strong>optional</strong>. Du kannst Rezepte und Einträge
+    auch vollständig manuell erstellen, ohne die Barcode- oder Suchfunktion zu verwenden.
+  </p>
+
+  <!-- 6. Rezept-Sharing -->
+  <h2>6. Rezept-Sharing per Link</h2>
+  <p>
+    PrepMate ermöglicht es, Rezepte als Link zu teilen. Dabei werden die Rezeptdaten
+    (Name, Zutaten, Zubereitung) Base64-kodiert in den Link eingebettet. Der Link wird
+    direkt mit der von dir gewählten App (z.&nbsp;B. Messenger, E-Mail) geteilt.
+    Es findet keine Übertragung an unsere Server statt. Der Empfänger des Links kann das
+    Rezept in seiner PrepMate-App importieren.
+  </p>
+
+  <!-- 7. Gesundheitsdaten & BMI -->
+  <h2>7. Hinweis zu Gesundheitsdaten und BMI</h2>
+  <p>
+    PrepMate verarbeitet Gewichts- und Körpermaßdaten, die als Gesundheitsdaten im Sinne
+    der DSGVO eingestuft werden können. Diese Daten werden ausschließlich lokal gespeichert
+    und nicht weiterverarbeitet oder geteilt.
+  </p>
+  <p>
+    <strong>Wichtiger Hinweis:</strong> Der in der App angezeigte Body-Mass-Index (BMI) dient
+    ausschließlich zur allgemeinen Information. Er stellt keine medizinische Diagnose dar und
+    ersetzt keine ärztliche Beratung. Bitte wende dich bei gesundheitlichen Fragen an eine
+    medizinische Fachkraft.
+  </p>
+
+  <!-- 8. Berechtigungen -->
+  <h2>8. App-Berechtigungen (Android)</h2>
+  <p>PrepMate benötigt folgende Android-Berechtigungen:</p>
+  <ul>
+    <li>
+      <strong>INTERNET:</strong> Für den Zugriff auf die OpenFoodFacts API beim Barcode-Scannen
+      und bei der Lebensmittelsuche.
+    </li>
+    <li>
+      <strong>CAMERA:</strong> Für den Barcode-Scanner und das Aufnehmen von Body-Tracking-Fotos.
+    </li>
+    <li>
+      <strong>READ_MEDIA_IMAGES:</strong> Zum Auswählen von Fotos aus der Galerie für
+      Rezept- und Body-Tracking-Fotos (Android 13+).
+    </li>
+    <li>
+      <strong>WAKE_LOCK:</strong> Damit der Bildschirm während des Koch-Modus aktiv bleibt.
+    </li>
+  </ul>
+  <p>
+    Berechtigungen werden nur angefragt, wenn die entsprechende Funktion genutzt wird.
+    Du kannst Berechtigungen jederzeit in den Android-Systemeinstellungen widerrufen.
+  </p>
+
+  <!-- 9. Deine Rechte -->
+  <h2>9. Deine Rechte</h2>
+  <p>
+    Da alle Daten ausschließlich lokal auf deinem Gerät gespeichert werden, liegt die
+    vollständige Kontrolle über deine Daten bei dir. Du kannst jederzeit:
+  </p>
+  <ul>
+    <li>Einzelne Einträge (Rezepte, Messungen, Fotos) direkt in der App löschen</li>
+    <li>Alle App-Daten über die Android-Systemeinstellungen löschen
+        (Einstellungen → Apps → PrepMate → Speicher → Daten löschen)</li>
+    <li>Die App deinstallieren, um alle lokalen Daten vollständig zu entfernen</li>
+  </ul>
+  <p>
+    Darüber hinaus hast du gemäß DSGVO folgende Rechte gegenüber uns, soweit personenbezogene
+    Daten überhaupt verarbeitet werden:
+  </p>
+  <ul>
+    <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+    <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+    <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+    <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+    <li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
+    <li>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde (Art. 77 DSGVO)</li>
+  </ul>
+  <p>
+    Zur Ausübung deiner Rechte wende dich per E-Mail an:
+    <a href="mailto:iksoftware.dev@gmail.com">iksoftware.dev@gmail.com</a>
+  </p>
+
+  <!-- 10. Datensicherheit -->
+  <h2>10. Datensicherheit</h2>
+  <p>
+    Die lokale Datenbank von PrepMate wird durch den Android-Geräteschutz (App-Sandbox) gesichert.
+    Kommunikation mit externen Diensten (OpenFoodFacts) erfolgt ausschließlich über verschlüsselte
+    HTTPS-Verbindungen.
+  </p>
+
+  <!-- 11. Kinder -->
+  <h2>11. Kinder und Minderjährige</h2>
+  <p>
+    PrepMate richtet sich nicht gezielt an Kinder unter 13 Jahren. Wir erheben wissentlich keine
+    personenbezogenen Daten von Kindern.
+  </p>
+
+  <!-- 12. Änderungen -->
+  <h2>12. Änderungen dieser Datenschutzerklärung</h2>
+  <p>
+    Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, etwa bei neuen
+    App-Funktionen oder geänderten gesetzlichen Anforderungen. Die jeweils aktuelle Version
+    ist stets unter
+    <a href="https://ik-software-de.github.io/prepmate/datenschutz.html">
+      https://ik-software-de.github.io/prepmate/datenschutz.html
+    </a>
+    abrufbar.
+  </p>
+
+  <!-- 13. Kontakt -->
+  <h2>13. Kontakt</h2>
+  <p>
+    Bei Fragen zum Datenschutz kannst du uns jederzeit kontaktieren:<br><br>
+    Ioannis Karakatsanis<br>
+    E-Mail: <a href="mailto:iksoftware.dev@gmail.com">iksoftware.dev@gmail.com</a>
+  </p>
+
+</body>
+</html>
 
