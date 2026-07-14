@@ -36,6 +36,25 @@
   <link rel="manifest" href="manifest.json">
 
   <style>
+    html,
+    body,
+    flutter-view,
+    flt-glass-pane,
+    #flutter_host {
+      width: 100%;
+      height: 100dvh;
+      margin: 0;
+      overscroll-behavior: none;
+      touch-action: pan-x pan-y pinch-zoom;
+    }
+
+    flutter-view,
+    flt-glass-pane,
+    #flutter_host {
+      display: block;
+      overscroll-behavior-x: contain;
+    }
+
     #splash {
       position: fixed;
       inset: 0;
@@ -57,6 +76,17 @@
   </style>
 </head>
 <body>
+  <script>
+    // Restores a path encoded by 404.html before Flutter reads the initial URL.
+    (function (location) {
+      if (location.search[1] === '/') {
+        var path = location.search.slice(1).split('&').map(function (part) {
+          return part.replace(/~and~/g, '&');
+        }).join('?');
+        window.history.replaceState(null, '', location.pathname.slice(0, -1) + path + location.hash);
+      }
+    }(window.location));
+  </script>
   <!-- Leichtgewichtiger Lade-Indikator, sichtbar ab dem ersten Frame bis die
        Flutter-Engine (inkl. WASM-Download) vollständig gebootstrapt ist. -->
   <div id="splash">
