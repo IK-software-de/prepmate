@@ -50,45 +50,86 @@
 <body>
     <div class="container">
         <h1>Datenschutzerklärung für PrepMate</h1>
-        <p><strong>Stand: Juni 2026</strong></p>
+        <p><strong>Stand: Juli 2026</strong></p>
 
         <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Nachfolgend informieren wir Sie darüber, wie wir mit Ihren Daten bei der Nutzung der App <strong>PrepMate</strong> umgehen.</p>
 
         <div class="highlight">
-            <strong>Offline-First-Prinzip:</strong> PrepMate arbeitet zu 100 % lokal auf Ihrem Gerät. Wir erheben, speichern oder übertragen keine persönlichen Nutzerdaten an unsere eigenen Server. Es werden keine Accounts, keine Cloud-Synchronisation und keine Tracking-Dienste verwendet.
+            <strong>Offline-First mit optionalem Cloud-Sync:</strong> PrepMate arbeitet standardmäßig lokal auf Ihrem Gerät. Sie können die App vollständig ohne ein Benutzerkonto verwenden. Optional können Sie ein kostenloses Konto erstellen, um Ihre Daten (Rezepte, Einkaufslisten, Körperwerte und Fortschrittsfotos) in einer sicheren Cloud zu sichern und geräteübergreifend zu synchronisieren.
         </div>
 
         <h2>1. Verantwortlicher</h2>
-        <p>Verantwortlich für die Datenverarbeitung in dieser App ist:</p>
+        <p>Verantwortlich für die Datenverarbeitung in dieser App im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
         <p>
-            <strong>PrepMate Entwicklerteam</strong><br>
+            <strong>IkSoftware (Ioannis Karakatsanis)</strong><br>
+            Projensdorferstraße 70<br>
+            24106 Kiel<br>
+            Deutschland<br>
             E-Mail: <a href="mailto:mealtrackingapp@gmail.com">mealtrackingapp@gmail.com</a>
         </p>
 
         <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
-        <p>Da PrepMate als rein lokale App konzipiert ist, werden alle von Ihnen eingegebenen Daten (wie z. B. Rezepte, Einkaufslisten, Körpermaße und Gewichtseinträge) ausschließlich in einer lokalen SQLite-Datenbank auf Ihrem Mobilgerät gespeichert. Wir haben zu keinem Zeitpunkt Zugriff auf diese Daten.</p>
+        <p><strong>Lokale Speicherung (Standard):</strong> Wenn Sie kein Konto erstellen, werden alle von Ihnen eingegebenen Daten (Rezepte, Einkaufslisten, Körpermaße, Gewicht und Fotos) ausschließlich lokal in einer SQLite-Datenbank auf Ihrem Mobilgerät gespeichert. Wir haben keinen Zugriff auf diese Daten.</p>
+        <p><strong>Optionale Cloud-Synchronisation:</strong> Wenn Sie sich entscheiden, ein Konto zu erstellen und zu sichern, werden Ihre Daten verschlüsselt an unsere Backend-Infrastruktur (bereitgestellt durch Supabase) übertragen und dort sicher gespeichert, um Ihnen ein Backup und eine geräteübergreifende Synchronisation zu ermöglichen.</p>
+        
+        <p><strong>Rechtsgrundlagen der Verarbeitung:</strong></p>
+        <ul>
+            <li>Die App-Nutzung und Bereitstellung der Cloud-Sync-Funktionen erfolgt auf Basis der <strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</strong>.</li>
+            <li><strong>Sensible Daten (Gesundheitsdaten):</strong> Gewicht, Körpermaße und Fortschrittsfotos gelten als Gesundheitsdaten. Durch die freiwillige Eingabe in die App erteilen Sie uns Ihre ausdrückliche <strong>Einwilligung (Art. 9 Abs. 2 lit. a DSGVO i.V.m. Art. 6 Abs. 1 lit. a DSGVO)</strong> zur lokalen Speicherung bzw. zur verschlüsselten Cloud-Synchronisation. Sie können diese Einwilligung jederzeit durch Löschen der entsprechenden Daten oder des Accounts widerrufen.</li>
+        </ul>
 
         <h2>3. Kameranutzung (Geräte-Berechtigungen)</h2>
         <p>Die App benötigt für bestimmte Funktionen Zugriff auf die Kamera Ihres Geräts:</p>
         <ul>
             <li><strong>Barcode-Scanner:</strong> Zum Einscannen von Lebensmittel-Barcodes, um Nährwertdaten abzurufen.</li>
-            <li><strong>Foto-Funktion (Body-Tracking):</strong> Zum Aufnehmen und Speichern von Fortschrittsfotos im Rahmen des Körper-Trackings.</li>
+            <li><strong>Foto-Funktion (Body-Tracking &amp; Rezepte):</strong> Zum Aufnehmen und Speichern von Fortschrittsfotos sowie Rezeptbildern.</li>
         </ul>
-        <p><strong>Wichtig:</strong> Die Kamerabilder werden ausschließlich lokal verarbeitet. Es findet kein Upload von Bilddaten auf externe Server statt.</p>
+        <p><strong>Datenübertragung:</strong> Im lokalen Modus verbleiben alle Bilder ausschließlich auf Ihrem Gerät. Bei aktiviertem Cloud-Sync werden diese verschlüsselt in Ihren privaten Cloud-Speicher übertragen.</p>
 
         <h2>4. Open Food Facts API (Nährwertdaten)</h2>
         <p>Um Ihnen Nährwertdaten zu Lebensmitteln bereitzustellen, nutzt PrepMate die Programmierschnittstelle (API) von <strong>Open Food Facts</strong>.</p>
         <ul>
             <li>Bei der Barcode-Suche oder manuellen Produktsuche wird eine anonyme Anfrage (GET-Request) an die Server von Open Food Facts gesendet.</li>
-            <li>Dabei werden keine persönlichen Daten oder Profile übertragen. Es wird lediglich die IP-Adresse des anfragenden Geräts (technisch bedingt) sowie ein anonymer App-User-Agent übertragen.</li>
-            <li>Weitere Informationen finden Sie in den Nutzungsbedingungen und der Datenschutzerklärung von Open Food Facts unter <a href="https://world.openfoodfacts.org/terms-of-use" target="_blank" rel="noopener">world.openfoodfacts.org/terms-of-use</a>.</li>
+            <li>Dabei werden keine persönlichen Daten übertragen. Es wird lediglich die IP-Adresse des anfragenden Geräts (technisch bedingt) sowie ein anonymisierter App-User-Agent übermittelt. Rechtsgrundlage hierfür ist unser <strong>berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</strong> an der Bereitstellung der Kernfunktionen (Nährwertauskunft) der App.</li>
+            <li>Weitere Informationen finden Sie in der Datenschutzerklärung von Open Food Facts unter <a href="https://world.openfoodfacts.org/terms-of-use" target="_blank" rel="noopener">world.openfoodfacts.org/terms-of-use</a>.</li>
         </ul>
 
         <h2>5. Weitergabe von Daten an Dritte</h2>
-        <p>Eine Weitergabe Ihrer lokalen App-Daten an Dritte findet nicht statt, es sei denn, Sie teilen Rezepte oder Einkaufslisten explizit selbst über die integrierte Teilen-Funktion (Share-Plus-Plugin) Ihres Betriebssystems.</p>
+        <p>Eine Weitergabe Ihrer persönlichen Daten an sonstige Dritte findet nicht statt. Für die optionale Cloud-Synchronisation und Authentifizierung nutzen wir die sicheren Dienste von **Supabase** (Server-Standorte innerhalb der EU). Wenn Sie Rezepte über die Teilen-Funktion teilen, tun Sie dies explizit manuell.</p>
 
-        <h2>6. Ihre Rechte</h2>
-        <p>Da alle Daten ausschließlich auf Ihrem Gerät gespeichert sind, haben Sie die volle Kontrolle über Ihre Daten. Sie können diese jederzeit direkt in den App-Einstellungen über die Schaltfläche "Alle Daten löschen" vollständig und unwiderruflich von Ihrem Gerät entfernen.</p>
+        <h2 id="loeschung">6. Ihre Rechte (Betroffenenrechte) und Datenlöschung</h2>
+        <p>Nach der DSGVO haben Sie weitreichende Rechte bezüglich Ihrer Daten:</p>
+        <ul>
+            <li><strong>Auskunft (Art. 15 DSGVO):</strong> Sie haben das Recht, Auskunft über die von uns verarbeiteten Daten zu erhalten.</li>
+            <li><strong>Berichtigung (Art. 16 DSGVO):</strong> Sie können die Berichtigung unrichtiger Daten verlangen (z.B. über Ihr Profil in der App).</li>
+            <li><strong>Löschung (Art. 17 DSGVO):</strong> Sie haben das Recht auf Löschung Ihrer Daten (Details siehe unten).</li>
+            <li><strong>Einschränkung (Art. 18 DSGVO) & Datenübertragbarkeit (Art. 20 DSGVO):</strong> Sie können die Einschränkung der Verarbeitung verlangen und haben das Recht, Ihre Daten in einem strukturierten Format zu erhalten.</li>
+            <li><strong>Widerruf (Art. 7 Abs. 3 DSGVO):</strong> Sie können erteilte Einwilligungen (z.B. für Gesundheitsdaten) jederzeit mit Wirkung für die Zukunft widerrufen.</li>
+            <li><strong>Beschwerderecht (Art. 77 DSGVO):</strong> Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</li>
+        </ul>
+
+        <h3>A. Account-Löschung über die App (Sofortige Löschung)</h3>
+        <p>Sie können die Löschung direkt in der App vornehmen. Dies ist der empfohlene, schnellste Weg:</p>
+        <ol>
+            <li>Öffnen Sie die App <strong>PrepMate</strong>.</li>
+            <li>Navigieren Sie zu den <strong>Einstellungen</strong> (Zahnrad-Symbol im Profil- oder Menübereich).</li>
+            <li>Wählen Sie den Menüpunkt <strong>Konto</strong> (bzw. Account) aus.</li>
+            <li>Tippen Sie auf <strong>"Account löschen"</strong>.</li>
+            <li>Bestätigen Sie die Löschung durch erneute Eingabe Ihrer Anmeldedaten (Re-Authentifizierung).</li>
+        </ol>
+        <p><strong>Zustand nach der Löschung:</strong> Alle lokalen Anwendungsdaten auf dem Gerät sowie alle auf den Cloud-Servern (Supabase) gespeicherten Daten (inklusive E-Mail-Adresse, Authentifizierungsdaten, Rezepten, Mahlzeitenplänen, Einkaufslisten, Körpermaßen und allen Fortschritts- sowie Rezeptfotos) werden <strong>sofort und unwiderruflich gelöscht</strong>. Es findet keine Aufbewahrung statt.</p>
+
+        <h3>B. Löschung per E-Mail-Anforderung</h3>
+        <p>Falls Sie keinen Zugriff mehr auf die App haben, können Sie die Löschung Ihres Kontos und aller zugehörigen Daten auch formlos per E-Mail anfordern:</p>
+        <ul>
+            <li>Senden Sie eine E-Mail an: <a href="mailto:mealtrackingapp@gmail.com">mealtrackingapp@gmail.com</a></li>
+            <li>Betreff: <strong>Konto- und Datenlöschung PrepMate</strong></li>
+            <li>Geben Sie in der E-Mail die **E-Mail-Adresse** an, mit der Sie Ihr PrepMate-Konto registriert haben.</li>
+        </ul>
+        <p>Nach erfolgreicher Überprüfung Ihrer Identität (Inhaberschaft der E-Mail-Adresse) werden wir Ihr Konto und alle zugehörigen Daten **innerhalb von maximal 7 Tagen** vollständig und unwiderruflich von allen Cloud-Servern löschen.</p>
+
+        <h3>C. Löschung lokaler Daten ohne Konto</h3>
+        <p>Wenn Sie kein Cloud-Konto erstellt haben und die App als anonymer Gast nutzen, können Sie alle lokalen Daten jederzeit in den App-Einstellungen über die Schaltfläche <strong>"Alle lokalen Daten löschen"</strong> vollständig und unwiderruflich von Ihrem Gerät entfernen oder einfach die App deinstallieren.</p>
 
         <h2>7. Änderungen dieser Datenschutzerklärung</h2>
         <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer App-Funktionen umzusetzen.</p>
