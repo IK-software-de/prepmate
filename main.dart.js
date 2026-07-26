@@ -42133,7 +42133,7 @@ b3p(a){var s,r,q=null,p=B.aR.d1(B.ay.w4(a.cl(),q)),o=A.bO2(B.f9,32768)
 B.a2A.b8j(A.adm(p,B.f9,q,q),o,q,!1,q)
 s=new Uint8Array(A.bo(o.KB()))
 if(s.length>4096)return q
-r="https://ik-software-de.github.io/prepmate/import#"+B.qQ.gn4().d1(s)
+r="https://app.myprepmate.de/import#"+B.qQ.gn4().d1(s)
 if(r.length>2000)return q
 return A.cS(r,0,q)},
 cgK(a){var s,r,q,p=null,o=new A.brA(65536,A.bO2(B.f9,32768),B.f9)
