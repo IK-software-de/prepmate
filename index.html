@@ -19,6 +19,12 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  
+  <!-- HTTP-Cache verhindern: Zwingt den Browser, immer nach der neuesten index.html zu fragen -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <meta name="theme-color" content="#2A9D8F">
   <meta name="description" content="PrepMate – Rezepte, Einkaufsliste und Körper-Tracking für die intelligente Ernährungsplanung.">
 
@@ -33,7 +39,7 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>PrepMate</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/manifest.json">
 
   <style>
     html,
@@ -87,11 +93,13 @@
       }
     }(window.location));
   </script>
+
   <!-- Leichtgewichtiger Lade-Indikator, sichtbar ab dem ersten Frame bis die
        Flutter-Engine (inkl. WASM-Download) vollständig gebootstrapt ist. -->
   <div id="splash">
     <img src="icons/Icon-192.png" alt="PrepMate lädt …">
   </div>
+  
   <script>
     window.addEventListener('flutter-first-frame', function () {
       var splash = document.getElementById('splash');
@@ -99,6 +107,13 @@
         splash.remove();
       }
     });
+
+    // Erfasse Service Worker Updates sofort und erzwinge ein Neuladen der App bei neuen Versionen
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.addEventListener('controllerchange', function() {
+        window.location.reload();
+      });
+    }
   </script>
 
   <!--
