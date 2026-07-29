@@ -1,12 +1,12 @@
 {
-    "name": "PrepMate",
-    "short_name": "PrepMate",
+    "name": "MyPrepMate",
+    "short_name": "MyPrepMate",
     "start_url": "/",
     "scope": "/",
     "display": "standalone",
     "background_color": "#1A1A2E",
     "theme_color": "#2A9D8F",
-    "description": "PrepMate – Rezepte, Einkaufsliste und Körper-Tracking für die intelligente Ernährungsplanung.",
+    "description": "MyPrepMate – Rezepte, Einkaufsliste und Körper-Tracking für die intelligente Ernährungsplanung.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
