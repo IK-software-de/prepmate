@@ -51847,7 +51847,8 @@ if(a>=12&&a<=13)return"Mahlzeit!"
 if(a>=14&&a<=17)return"Guten Nachmittag!"
 if(a>=18&&a<=21)return"Guten Abend!"
 return"Noch wach?"},
-c_O(a,b,c,d,e,f){return A.a6(["kcal",d*a/e,"protein",f*a/e,"carbs",b*a/e,"fat",c*a/e],t.N,t.i)},
+c_O(a,b,c,d,e,f){var s=isFinite(e)&&e>0?e:100
+return A.a6(["kcal",d*a/s,"protein",f*a/s,"carbs",b*a/s,"fat",c*a/s],t.N,t.i)},
 cwo(a){var s,r
 if(a==null)return null
 s=$.cj4().iJ(a)
