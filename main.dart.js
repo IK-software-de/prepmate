@@ -178174,28 +178174,29 @@ $0(){var s=this.b?this.c.c:null
 this.a.db=s},
 $S:0}
 A.am8.prototype={
-B(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e=A.o(a).ax.a===B.j?B.k:B.l,d=g.f
-if(d==null)d=20
+B(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d=A.o(a).ax.a===B.j?B.k:B.l,c=f.f
+if(c==null)c=20
 s=A.aw(12)
-r=A.ca(e.f,1)
+r=A.ca(d.f,1)
 q=A.aw(12)
 p=A.aw(12)
-o=g.c
-n=A.c6(A.kD(A.aw(10),A.baw(g.Q,g.as,g.cy,B.ar,g.z,8,o,56,g.CW),B.bd),56,56)
-m=e.d
-o=A.A(o,1,B.az,f,f,A.cg().$3$color$fontSize$fontWeight(m,16,B.M),f,f,f)
-l=e.e
+o=f.c
+n=A.c6(A.kD(A.aw(10),A.baw(f.Q,f.as,f.cy,B.ar,f.z,8,o,56,f.CW),B.bd),56,56)
+m=d.d
+o=A.A(o,1,B.az,e,e,A.cg().$3$color$fontSize$fontWeight(m,16,B.M),e,e,e)
+l=d.e
 k=t.p
-j=A.b([B.aeO,B.f6,A.A(""+d+" mins",f,f,f,f,A.bQ().$3$color$fontSize$fontWeight(l,12,B.aN),f,f,f),B.bn,B.afi,B.f6],k)
-i=B.d.ag(g.y)
-j.push(A.A(""+i+" kcal",f,f,f,f,A.bQ().$3$color$fontSize$fontWeight(m,12,B.N),f,f,f))
-o=A.bk(A.am(A.b([o,B.fH,A.aH(j,B.m,B.f,B.h,0,f)],k),B.E,B.bz,B.h),1)
+j=A.b([B.aeO,B.f6,A.A(""+c+" mins",e,e,e,e,A.bQ().$3$color$fontSize$fontWeight(l,12,B.aN),e,e,e),B.bn,B.afi,B.f6],k)
+i=B.d.ag(f.y)
+j.push(A.A(""+i+" kcal",e,e,e,e,A.bQ().$3$color$fontSize$fontWeight(m,12,B.N),e,e,e))
+o=A.bk(A.am(A.b([o,B.fH,A.aH(j,B.m,B.f,B.h,0,e)],k),B.E,B.bz,B.h),1)
 m=A.b([],k)
-j=g.ch
-if(j!=null){i=g.ay
-h=i?B.DH:B.DG
-m.push(A.d0(f,B.A_,f,A.bM(h,i?B.aK:l.bH(0.6),f,20),f,f,j,B.a6,f,f,f,B.fP))}m.push(A.bM(B.aeh,l,f,22))
-return A.aL(f,A.ew(!1,B.a3,!0,q,A.eW(!1,p,!0,new A.a8(B.e_,A.aH(A.b([n,B.xK,o,A.aH(m,B.m,B.f,B.a1,0,f)],k),B.m,B.f,B.h,0,f),f),f,!0,f,f,f,f,f,f,f,f,f,f,g.ax,f,f,f,f,f,f,f),B.p,B.P,0,f,f,f,f,f,B.c3),B.p,f,f,new A.aQ(e.b,f,r,s,f,f,f,B.G),f,f,f,B.C7,f,f,f,f)}}
+j=f.ch
+if(j!=null){i=f.ay
+h=i?"Aus Favoriten entfernen":"Zu Favoriten hinzuf\xfcgen"
+g=i?B.DH:B.DG
+m.push(A.d0(e,B.A_,e,A.bM(g,i?B.aK:l.bH(0.6),e,20),e,e,j,B.a6,e,e,h,B.fP))}m.push(A.bM(B.aeh,l,e,22))
+return A.aL(e,A.ew(!1,B.a3,!0,q,A.eW(!1,p,!0,new A.a8(B.e_,A.aH(A.b([n,B.xK,o,A.aH(m,B.m,B.f,B.a1,0,e)],k),B.m,B.f,B.h,0,e),e),e,!0,e,e,e,e,e,e,e,e,e,e,f.ax,e,e,e,e,e,e,e),B.p,B.P,0,e,e,e,e,e,B.c3),B.p,e,e,new A.aQ(d.b,e,r,s,e,e,e,B.G),e,e,e,B.C7,e,e,e,e)}}
 A.NH.prototype={
 B(a){var s,r=null,q=A.o(a),p=A.b([],t.p)
 for(s=J.au(this.c);s.p();)p.push(new A.a8(B.BS,this.aKK(a,q,s.gI()),r))
