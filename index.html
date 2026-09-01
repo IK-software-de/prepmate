@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>PrepMate</title>
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
 
   <style>
     html,
@@ -61,23 +61,27 @@
       overscroll-behavior-x: contain;
     }
 
+    /* Nur Hintergrundfarbe, bewusst KEIN Logo/Icon: Die eigentliche
+       Splash-Animation (lib/widgets/splash_screen.dart, "my"/"prep"/"mate"
+       Wortmarken-Wipe) läuft bereits ab der ersten Flutter-Frame als
+       Overlay. Ein zusätzliches Icon hier würde davor aufblitzen statt
+       nahtlos in die Animation überzugehen. Farbe = AppColors.light
+       .background (lib/constants/app_colors.dart). Bewusst KEIN
+       `@media (prefers-color-scheme: dark)`: Das App-Theme folgt dem
+       Browser/System-Dark-Mode NICHT (siehe ThemeModeNotifier in
+       lib/providers/settings_provider.dart — rein manueller Toggle, startet
+       ohne gespeicherte Präferenz immer hell). Ein an prefers-color-scheme
+       gekoppelter dunkler Splash würde bei jedem Dark-Mode-Browser einen
+       dunkel→hell-Bruch erzeugen, sobald Flutter (hell) übernimmt. Das
+       Inline-Script unten liest stattdessen die tatsächliche, in
+       localStorage persistierte Präferenz (denselben Wert, den
+       shared_preferences_web unter dem Schlüssel "flutter.themeMode"
+       ablegt) und setzt die Hintergrundfarbe synchron vor dem ersten Paint. */
     #splash {
       position: fixed;
       inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #1A1A2E;
+      background-color: #FAF9F6;
       z-index: 9999;
-    }
-    #splash img {
-      width: 96px;
-      height: 96px;
-      animation: prepmate-splash-pulse 1.2s ease-in-out infinite;
-    }
-    @keyframes prepmate-splash-pulse {
-      0%, 100% { opacity: 0.6; transform: scale(0.96); }
-      50% { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
@@ -92,14 +96,27 @@
         window.history.replaceState(null, '', location.pathname.slice(0, -1) + path + location.hash);
       }
     }(window.location));
+
+    // Splash-Hintergrund an die tatsächliche App-Theme-Präferenz angleichen
+    // (siehe Kommentar im <style>-Block oben). Läuft synchron vor dem
+    // #splash-Markup, damit kein falsch gefärbter Frame sichtbar wird.
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('flutter.themeMode');
+        if (stored === 'dark') {
+          document.write('<style>#splash{background-color:#141614}</style>');
+        }
+      } catch (e) {
+        // localStorage kann in privaten/eingeschränkten Kontexten fehlen —
+        // dann bleibt der helle Default aus dem <style>-Block oben stehen.
+      }
+    }());
   </script>
 
-  <!-- Leichtgewichtiger Lade-Indikator, sichtbar ab dem ersten Frame bis die
-       Flutter-Engine (inkl. WASM-Download) vollständig gebootstrapt ist. -->
-  <div id="splash">
-    <img src="icons/Icon-192.png" alt="PrepMate lädt …">
-  </div>
-  
+  <!-- Hält nur die Hintergrundfarbe der Splash-Animation vor, bis die
+       Flutter-Engine (inkl. WASM-Download) die erste Frame zeichnet. -->
+  <div id="splash"></div>
+
   <script>
     window.addEventListener('flutter-first-frame', function () {
       var splash = document.getElementById('splash');

@@ -8,9 +8,13 @@
     // GitHub Pages serves this file for unknown paths. Keep the app path and
     // import fragment while redirecting to the Flutter entry point.
     (function (location) {
-      var pathSegmentsToKeep = 1; // /prepmate/
-      var base = location.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
-      var route = location.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/');
+      // Production uses the custom-domain root, while the Pages preview uses
+      // /prepmate/. Keep both bases working for direct deep links.
+      var segments = location.pathname.split('/').filter(Boolean);
+      var isProjectSite = segments[0] === 'prepmate';
+      var base = isProjectSite ? '/prepmate/' : '/';
+      var routeSegments = isProjectSite ? segments.slice(1) : segments;
+      var route = routeSegments.join('/');
       var query = location.search ? '&' + location.search.slice(1).replace(/&/g, '~and~') : '';
       location.replace(
         location.protocol + '//' + location.host + base + '/?/' + route + query + location.hash
