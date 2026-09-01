@@ -17779,8 +17779,8 @@ axt:function axt(){},
 cX(a,b,c,d,e,f,g,h,i,j,k,l){return new A.zJ(e,l,h,i,d,a,g,k,c,b,j,B.kR,f)},
 cbU(a,b,c){var s=null
 return new A.zJ(s,s,s,s,a,s,b,c,s,s,s,B.b3f,s)},
-cbV(a,b,c,d){var s=null
-return new A.zJ(b,s,s,s,a,s,c,s,s,s,d,B.b3g,s)},
+cbV(a,b,c,d,e){var s=null
+return new A.zJ(b,s,s,s,a,s,c,e,s,s,d,B.b3g,s)},
 pC(a,b,c,d,e,f,g,h,i,j,a0,a1,a2,a3,a4,a5,a6){var s,r,q,p,o,n,m,l,k=null
 if(h!=null){A:{s=h.bI(0.1)
 r=h.bI(0.08)
@@ -169175,7 +169175,7 @@ A.bsr.prototype={
 $1(a){var s,r,q=this,p=null,o=A.o(a),n=A.c0(a,p,t.l).w,m=o.ax,l=m.k3,k=A.z("Ziele anpassen",p,p,p,p,p,A.c6().$3$color$fontSize$fontWeight(l,20,B.ae),p,p,p)
 m=m.rx
 s=t.p
-m=A.b([A.aE(A.b([k,A.cX(p,p,p,A.bO(B.lT,m==null?l:m,p,p),p,p,new A.bsi(a),p,p,p,p,p)],s),B.m,B.cv,B.i,0,p),B.R],s)
+m=A.b([A.aE(A.b([k,A.cX(p,p,p,A.bO(B.lT,m==null?l:m,p,p),p,p,new A.bsi(a),p,p,p,"Schlie\xdfen",p)],s),B.m,B.cv,B.i,0,p),B.R],s)
 if(q.c){l=B.q.bx(0.08)
 k=A.av(8)
 r=A.cb(B.ah,1)
@@ -169272,7 +169272,7 @@ $2(a,b){var s,r,q=this,p=null,o=q.b,n=J.au(o),m=q.c.ax,l=m.k3,k=A.z("Alle Messun
 m=m.rx
 s=q.d
 r=t.p
-return A.ag(A.b([new A.a6(B.dS,A.aE(A.b([k,A.cX(p,p,p,A.bO(B.lT,m==null?l:m,p,p),p,p,new A.bst(s),p,p,p,p,p)],r),B.m,B.cv,B.i,0,p),p),B.cH,A.bj(A.Xw(b,new A.bsu(q.a,o,s),n.gt(o),p,p,p,B.ap,new A.bsv(),!1),1)],r),B.m,p,B.f,B.i)},
+return A.ag(A.b([new A.a6(B.dS,A.aE(A.b([k,A.cX(p,p,p,A.bO(B.lT,m==null?l:m,p,p),p,p,new A.bst(s),p,p,p,"Schlie\xdfen",p)],r),B.m,B.cv,B.i,0,p),p),B.cH,A.bj(A.Xw(b,new A.bsu(q.a,o,s),n.gt(o),p,p,p,B.ap,new A.bsv(),!1),1)],r),B.m,p,B.f,B.i)},
 $S:240}
 A.bst.prototype={
 $0(){return A.bn(this.a,!1).e4()},
@@ -171119,10 +171119,10 @@ o=s?g.gGu():"Ganze Packung"
 g=A.av(10)
 r=A.cb(h.f,1)
 n=A.z(o,i,1,B.at,i,i,A.ax().$3$color$fontSize$fontWeight(h.e,12,B.O),B.b0,i,i)
-m=A.cX(i,B.nG,i,B.ah8,i,B.b_c,j.at?i:new A.bAE(j),B.a4,i,i,i,B.dx)
+m=A.cX(i,B.nG,i,B.ah8,i,B.b_c,j.at?i:new A.bAE(j),B.a4,i,i,"Menge verringern",B.dx)
 l=A.z(""+j.y.d,B.b_b,i,i,i,i,A.c6().$3$color$fontSize$fontWeight(h.d,26,B.ae),i,i,i)
 k=t.p
-k=A.b([n,B.c3,A.aE(A.b([m,new A.a6(B.jB,l,i),A.cX(i,B.nG,i,B.El,i,B.b_d,j.at?i:new A.bAF(j),B.a4,i,i,i,B.dx)],k),B.m,B.by,B.i,0,i)],k)
+k=A.b([n,B.c3,A.aE(A.b([m,new A.a6(B.jB,l,i),A.cX(i,B.nG,i,B.El,i,B.b_d,j.at?i:new A.bAF(j),B.a4,i,i,"Menge erh\xf6hen",B.dx)],k),B.m,B.by,B.i,0,i)],k)
 if(p!=null&&p>0)k.push(A.z(A.We(j.y.gmp())+" "+q,B.b_p,i,i,i,i,A.ax().$3$color$fontSize$fontWeight(B.q,13,B.H),i,i,i))
 return A.aK(i,A.ag(k,B.m,i,B.f,B.i),B.p,i,i,new A.aQ(h.b,i,r,g,i,i,i,B.F),i,i,B.b_e,i,B.Cs,i,i,i)},
 aMp(a){var s,r,q,p=null,o=A.o(a).ax.a===B.j?B.k:B.l,n=this.z,m=A.bO(B.DQ,o.e,p,p),l=A.b([B.abs],t.oD)
@@ -172356,7 +172356,7 @@ $S:1202}
 A.bIP.prototype={
 $2(a,b){var s,r,q,p,o=this,n=null,m=o.a,l=m.w
 l===$&&A.a()
-s=l.a.a.length!==0?A.cX(n,n,n,B.Eo,n,n,new A.bIK(m),n,n,n,n,n):n
+s=l.a.a.length!==0?A.cX(n,n,n,B.Eo,n,n,new A.bIK(m),n,n,n,"Suche l\xf6schen",n):n
 s=A.iX(n,B.ar,!1,n,!0,B.P,n,A.jl(),l,n,n,n,n,n,2,A.eE(n,new A.fs(4,A.av(12),B.Al),n,B.f3,n,n,n,n,!0,new A.fs(4,A.av(12),B.dD),n,n,n,n,n,n,n,n,n,n,n,new A.fs(4,A.av(12),B.Al),n,n,n,n,n,n,n,n,n,"Produkt suchen\u2026",n,n,n,n,n,n,n,n,n,!0,!0,!1,n,B.p5,n,n,n,n,n,n,s,n,n,n,n,n),B.Z,!0,n,!0,n,!1,n,B.bz,n,n,n,n,n,n,n,n,1,n,n,!1,"\u2022",n,n,n,new A.bIL(m),n,!1,n,n,!1,n,!0,n,B.bH,n,n,n,n,n,n,n,n,n,n,n,n,!0,B.az,n,B.as,n,B.a0g,n,n)
 l=m.y
 l===$&&A.a()
@@ -172664,7 +172664,7 @@ r=m!=null
 if(r&&m.length!==0){q=n.ok.Q
 s.push(A.z(m,o,1,B.at,o,o,q==null?o:q.arO(B.ca),o,o,o))}if(k!=null)s.push(A.z(B.d.ap(k,0)+" kcal / "+l.c,o,o,o,o,o,n.ok.Q,o,o,o))
 s=A.ag(s,B.C,o,B.f,B.i)
-q=A.cbV(B.fJ,20,p.d,A.pC(o,o,o,o,o,o,o,o,o,o,o,o,o,o,new A.b5(n.ax.k3.bx(0.4),1.5,B.J,-1),o,o))
+q=A.cbV(B.fJ,20,p.d,A.pC(o,o,o,o,o,o,o,o,o,o,o,o,o,o,new A.b5(n.ax.k3.bx(0.4),1.5,B.J,-1),o,o),"Produkt hinzuf\xfcgen")
 m=r&&m.length!==0
 return A.yX(A.lC(!1,o,o,o,!0,o,o,!0,m,j,o,o,o,o,p.e,!1,o,o,o,o,o,s,o,i,o,q,o),o,o,o,B.ie,o)},
 ZF(a){var s=this.c.db
@@ -172742,7 +172742,7 @@ if(s!=null){s=B.d.ap(s,0)
 o=r.d?" \xb7 "+o.dx+"\xd7":""
 k.push(A.z(s+" kcal / "+n+o,q,q,q,q,q,p.ok.Q,q,q,q))}else if(r.d)k.push(A.z(""+o.dx+"\xd7",q,q,q,q,q,p.ok.Q,q,q,q))
 o=A.ag(k,B.C,q,B.f,B.i)
-k=A.cbV(B.fJ,20,r.e,A.pC(q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.b5(p.ax.k3.bx(0.4),1.5,B.J,-1),q,q))
+k=A.cbV(B.fJ,20,r.e,A.pC(q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.b5(p.ax.k3.bx(0.4),1.5,B.J,-1),q,q),"Produkt hinzuf\xfcgen")
 j=i&&j.length!==0
 return A.yX(A.lC(!1,q,q,q,!0,q,q,!0,j,m,q,q,q,q,r.f,!1,q,q,q,q,q,o,q,l,q,k,q),q,q,q,B.ie,q)},
 ZF(a){var s=this.c.d
@@ -172987,9 +172987,9 @@ q=t.p
 p=A.aE(A.b([B.agI,B.aU,A.z("Portionen:",m,m,m,m,m,A.ax().$3$color$fontSize$fontWeight(r,14,B.O),m,m,m)],q),B.m,B.f,B.i,0,m)
 o=A.b([],q)
 if(j!==this.f){n=A.mx(m,m,m,m,m,m,m,m,m,B.q,m,m,m,m,m,m,m,m,m,m,B.dx)
-B.c.R(o,A.b([A.cu(A.z("Speichern",m,m,m,m,m,A.ax().$1$fontWeight(B.H),m,m,m),m,m,m,new A.bIc(this,b,j,a),m,n),B.aU],q))}o.push(A.cX(B.q,m,m,B.ahb,22,m,j>1?i.gbhf():m,B.a4,m,m,m,B.dx))
+B.c.R(o,A.b([A.cu(A.z("Speichern",m,m,m,m,m,A.ax().$1$fontWeight(B.H),m,m,m),m,m,m,new A.bIc(this,b,j,a),m,n),B.aU],q))}o.push(A.cX(B.q,m,m,B.ahb,22,m,j>1?i.gbhf():m,B.a4,m,m,"Portion verringern",B.dx))
 o.push(new A.a6(B.dT,A.z(""+j,m,m,m,m,m,A.bT().$3$color$fontSize$fontWeight(r,16,B.ae),m,m,m),m))
-o.push(A.cX(B.q,m,m,B.ah7,22,m,j<99?i.gblX():m,B.a4,m,m,m,B.dx))
+o.push(A.cX(B.q,m,m,B.ah7,22,m,j<99?i.gblX():m,B.a4,m,m,"Portion erh\xf6hen",B.dx))
 return A.aK(m,A.aE(A.b([p,A.aE(o,B.m,B.f,B.i,0,m)],q),B.m,B.cv,B.i,0,m),B.p,m,m,new A.aQ(l.b,m,s,k,m,m,m,B.F),m,m,m,m,B.os,m,m,m)}}
 A.bIc.prototype={
 $0(){var s=0,r=A.m(t.H),q,p=this,o,n,m,l
@@ -179479,7 +179479,7 @@ if(s.c==null)return
 s.L(new A.bro(s))
 s.w.rM()},
 A(a){var s,r,q,p,o=this,n=null,m=o.a.r
-m=A.cX(n,n,n,B.jS,n,n,m,n,n,n,n,n)
+m=A.cX(n,n,n,B.jS,n,n,m,n,n,n,"Schlie\xdfen",n)
 s=t.p
 r=A.b([],s)
 r.push(A.cX(n,n,n,B.agQ,n,n,new A.brt(o),n,n,n,"Kamera wechseln",n))
