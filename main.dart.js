@@ -172858,23 +172858,25 @@ m=A.z(n,a,a,a,a,a,A.c6().$2$fontSize$fontWeight(18,B.ae),a,a,a)
 l=a7.f
 k=l?B.Ee:B.Ed
 j=o.ax
-if(l)l=j.fy
-else{l=j.rx
-if(l==null)l=j.k3}i=t.p
-m=A.dG(A.b([A.cX(a,a,a,A.bO(k,l,a,a),a,a,b.z,a,a,a,"Favorit",a),A.cX(a,a,a,B.agW,a,a,b.w,a,a,a,"Teilen",a),A.cX(a,a,a,B.Es,a,a,new A.bJN(b,b1),a,a,a,"Bearbeiten",a),A.cX(a,a,a,B.ahk,a,a,b.x,a,a,a,"L\xf6schen",a)],i),a,a,!0,!0,a,a,1,a,a,a,!1,a,!1,a,a,a,a,!0,a,a,a,a,a,m,a,a,a,1,a,!0)
+if(l)i=j.fy
+else{i=j.rx
+if(i==null)i=j.k3}i=A.bO(k,i,a,a)
+l=l?"Aus Favoriten entfernen":"Zu Favoriten hinzuf\xfcgen"
+k=t.p
+m=A.dG(A.b([A.cX(a,a,a,i,a,a,b.z,a,a,a,l,a),A.cX(a,a,a,B.agW,a,a,b.w,a,a,a,"Teilen",a),A.cX(a,a,a,B.Es,a,a,new A.bJN(b,b1),a,a,a,"Bearbeiten",a),A.cX(a,a,a,B.ahk,a,a,b.x,a,a,a,"L\xf6schen",a)],k),a,a,!0,!0,a,a,1,a,a,a,!1,a,!1,a,a,a,a,!0,a,a,a,a,a,m,a,a,a,1,a,!0)
 l=A.o(b1).ax.a===B.j?B.k:B.l
-k=A.av(12)
+i=A.av(12)
 h=A.cb(B.ah,1)
 g=b.f
 f=A.c8(A.kh(B.tD,A.bcd(a,a,a7.r,B.ar,a,8,n,56,g),B.bb,a),200,1/0)
-e=A.b([],i)
+e=A.b([],k)
 d=J.au(g)
 if(d.gd4(g)){g=d.dz(g,new A.bJO(),t.dT)
 g=A.H(g,g.$ti.i("a3.E"))
-B.c.R(e,A.b([A.lX(g,a,6,6),B.kE],i))}g=j.k3
+B.c.R(e,A.b([A.lX(g,a,6,6),B.kE],k))}g=j.k3
 e.push(A.z(n,a,a,a,a,a,A.c6().$3$color$fontSize$fontWeight(g,22,B.ae),a,a,a))
 a7=a7.c
-if(a7.length!==0){n=A.b([B.d1],i)
+if(a7.length!==0){n=A.b([B.d1],k)
 d=J.au(s)
 c=j.rx
 if(d.gd4(s)){a7=A.ax().$3$color$fontSize$height(c==null?g:c,13,1.4)
@@ -172884,10 +172886,10 @@ n.push(A.GT(a,a,a,B.co,a,a,!0,a,A.dE(d,a,a,a,a,a,a,a,a,a7,a),B.az,a,a,B.aG,B.b7)
 B.c.R(e,n)}e.push(B.a7)
 a7=A.av(8)
 n=A.cb(B.ah,1)
-e.push(A.aE(A.b([A.aK(a,A.aE(A.b([B.agR,B.kD,A.z(""+p+" mins",a,a,a,a,a,A.bT().$3$color$fontSize$fontWeight(g,13,B.O),a,a,a)],i),B.m,B.f,B.a_,0,a),B.p,a,a,new A.aQ(j.k2,a,n,a7,a,a,a,B.F),a,a,a,a,B.uJ,a,a,a),B.mW,A.ei(a2,new A.bJQ(a9,a6),new A.bJR(),new A.bJS(),!1,!0,!1)],i),B.m,B.f,B.i,0,a))
-k=A.aK(a,A.ag(A.b([f,new A.a6(B.bg,A.ag(e,B.C,a,B.f,B.i),a)],i),B.C,a,B.f,B.i),B.p,a,a,new A.aQ(l.b,a,h,k,a,a,a,B.F),a,a,a,a,a,a,a,1/0)
+e.push(A.aE(A.b([A.aK(a,A.aE(A.b([B.agR,B.kD,A.z(""+p+" mins",a,a,a,a,a,A.bT().$3$color$fontSize$fontWeight(g,13,B.O),a,a,a)],k),B.m,B.f,B.a_,0,a),B.p,a,a,new A.aQ(j.k2,a,n,a7,a,a,a,B.F),a,a,a,a,B.uJ,a,a,a),B.mW,A.ei(a2,new A.bJQ(a9,a6),new A.bJR(),new A.bJS(),!1,!0,!1)],k),B.m,B.f,B.i,0,a))
+i=A.aK(a,A.ag(A.b([f,new A.a6(B.bg,A.ag(e,B.C,a,B.f,B.i),a)],k),B.C,a,B.f,B.i),B.p,a,a,new A.aQ(l.b,a,h,i,a,a,a,B.F),a,a,a,a,a,a,a,1/0)
 h=A.z("N\xe4hrwerte pro Portion",a,a,a,a,a,A.c6().$3$color$fontSize$fontWeight(g,16,B.H),a,a,a)
-a8=A.aE(A.b([A.bj(new A.aBe(a0,a8,a),1)],i),B.m,B.f,B.i,0,a)
+a8=A.aE(A.b([A.bj(new A.aBe(a0,a8,a),1)],k),B.m,B.f,B.i,0,a)
 a0=A.LQ(B.q,a,B.u,a,a,new A.da(A.av(8),B.G),a,a)
 a0=A.c8(A.oq(B.ah0,A.z("Zur Einkaufsliste hinzuf\xfcgen",a,a,a,a,a,A.ax().$2$fontSize$fontWeight(15,B.H),a,a,a),b.y,a0),50,1/0)
 a7=A.o(b1).ax.a===B.j?B.k:B.l
@@ -172898,18 +172900,18 @@ e=J.au(q)
 d=e.gt(q)
 j=j.rx
 c=j==null
-f=A.b([A.aE(A.b([B.ah2,B.aU,f,B.cy,A.z(""+d+" Zutaten",a,a,a,a,a,A.bT().$2$color$fontSize(c?g:j,12),a,a,a)],i),B.m,B.f,B.i,0,a),B.a7,B.cH,B.K],i)
+f=A.b([A.aE(A.b([B.ah2,B.aU,f,B.cy,A.z(""+d+" Zutaten",a,a,a,a,a,A.bT().$2$color$fontSize(c?g:j,12),a,a,a)],k),B.m,B.f,B.i,0,a),B.a7,B.cH,B.K],k)
 if(e.ga3(q))f.push(new A.a6(B.uF,A.z("Keine Zutaten vorhanden",a,a,a,a,a,A.ax().$2$color$fontSize(c?g:j,13),a,a,a),a))
 else{j=e.dz(q,new A.bJT(a9),t.Rh)
 j=A.H(j,j.$ti.i("a3.E"))
-f.push(A.ag(j,B.m,a,B.f,B.i))}a0=A.b([k,B.cm,h,B.kE,new A.aDo(a2,a6,a),B.cm,a8,B.R,a0,B.cn,A.aK(a,A.ag(f,B.C,a,B.f,B.i),B.p,a,a,new A.aQ(a7.b,a,l,n,a,a,a,B.F),a,a,a,a,B.bg,a,a,1/0),B.cm],i)
+f.push(A.ag(j,B.m,a,B.f,B.i))}a0=A.b([i,B.cm,h,B.kE,new A.aDo(a2,a6,a),B.cm,a8,B.R,a0,B.cn,A.aK(a,A.ag(f,B.C,a,B.f,B.i),B.p,a,a,new A.aQ(a7.b,a,l,n,a,a,a,B.F),a,a,a,a,B.bg,a,a,1/0),B.cm],k)
 a7=J.au(b0)
 if(a7.gd4(b0)){a8=A.o(b1).ax.a===B.j?B.k:B.l
 n=A.av(12)
 l=A.cb(B.ah,1)
-g=A.b([A.aE(A.b([B.agm,B.aU,A.z("Zubereitung",a,a,a,a,a,A.c6().$3$color$fontSize$fontWeight(g,16,B.H),a,a,a)],i),B.m,B.f,B.i,0,a),B.fT],i)
+g=A.b([A.aE(A.b([B.agm,B.aU,A.z("Zubereitung",a,a,a,a,a,A.c6().$3$color$fontSize$fontWeight(g,16,B.H),a,a,a)],k),B.m,B.f,B.i,0,a),B.fT],k)
 B.c.R(g,a7.SY(b0).geT().dz(0,new A.bJU(r),t.l7))
-B.c.R(a0,A.b([A.aK(a,A.ag(g,B.C,a,B.f,B.i),B.p,a,a,new A.aQ(a8.b,a,l,n,a,a,a,B.F),a,a,a,a,B.bg,a,a,1/0)],i))}return A.dn(m,a,A.jB(A.ag(a0,B.C,a,B.f,B.i),a,B.Z,a,B.fD,B.nF,B.ap),a,!1,a,a,a)}}
+B.c.R(a0,A.b([A.aK(a,A.ag(g,B.C,a,B.f,B.i),B.p,a,a,new A.aQ(a8.b,a,l,n,a,a,a,B.F),a,a,a,a,B.bg,a,a,1/0)],k))}return A.dn(m,a,A.jB(A.ag(a0,B.C,a,B.f,B.i),a,B.Z,a,B.fD,B.nF,B.ap),a,!1,a,a,a)}}
 A.bJN.prototype={
 $0(){return A.dz(this.b,"recipe-edit",new A.rF(this.a.e.a,null,null,null),B.am,t.X)},
 $S:0}
